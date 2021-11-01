@@ -2,9 +2,10 @@
 
     agent any
     stages {
-        stage('Build') {
+        stage('Clean') {
             steps {
-                echo 'Building..'
+                echo 'Cleaning..'
+                  sh 'mvn -B -DskipTests clean package'
               
             }
         }

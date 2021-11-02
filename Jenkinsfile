@@ -21,5 +21,12 @@
                 }
             }
         }
+         stage('Package') {
+            steps {
+                echo 'mvn install'
+            }
+         }
     }
+
+ }
 

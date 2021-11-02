@@ -23,9 +23,10 @@
         }
          stage('Package') {
             steps {
-                echo 'mvn install'
+                echo 'mvn package'
             }
          }
+         
     }
 
  }
